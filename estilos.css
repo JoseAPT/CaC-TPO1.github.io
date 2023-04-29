@@ -1,0 +1,31 @@
+.d-item {
+    height: 600px;
+}
+.d-item2 {
+    height: 500px;
+}
+.d-img {
+    height: 100%; object-fit: cover; filter: brightness(0.6);
+}
+.d-img2 {
+    height: 100%; object-fit: cover;
+}
+.navbar-nav a:focus {
+    color: rgb(42, 179, 42) !important;
+}
+.navbar-nav a:hover {
+    color: rgb(42, 179, 42) !important;
+}
+.navbar-nav a:active {
+    color: rgb(42, 179, 42) !important;
+}
+.especial{
+    font-size: 13px;color:white;line-height: 2em;justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(42, 179, 42);
+}
