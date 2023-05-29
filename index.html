@@ -33,7 +33,7 @@
                   <a class="nav-link" href="#conv">Conviertete en orador</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Comprar tickets</a>
+                  <a class="nav-link" href="#ticket">Comprar tickets</a>
                 </li>
               </ul>
             </div>
@@ -57,7 +57,7 @@
                     <p class="text-end">Bs As llega por primera vez a Argentina un evento para compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos  que <br> están creando el futuro de Internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br> nivel que tenemos para ti. Te esperamos!</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-5">
                     <button type="button" class="btn btn-outline-secondary text-white border-white">Quiero ser orador</button>
-                    <button type="button" class="btn btn-success">Comprar tickets</button>
+                    <button type="button" class="btn btn-success"><a href="#ticket">Comprar tickets</a></button>
                   </div>
                   </div>
                 </div>
@@ -68,7 +68,7 @@
                     <p class="text-end">Bs As llega por primera vez a Argentina un evento para compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos  que <br> están creando el futuro de Internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br> nivel que tenemos para ti. Te esperamos!</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-5">
                     <button type="button" class="btn btn-outline-secondary text-white border-white">Quiero ser orador</button>
-                    <button type="button" class="btn btn-success">Comprar tickets</button>
+                    <button type="button" class="btn btn-success"><a href="#ticket">Comprar tickets</a></button>
                   </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@
                     <p class="text-end">Bs As llega por primera vez a Argentina un evento para compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos  que <br> están creando el futuro de Internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br> nivel que tenemos para ti. Te esperamos!</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-5">
                     <button type="button" class="btn btn-outline-secondary text-white border-white">Quiero ser orador</button>
-                    <button type="button" class="btn btn-success">Comprar tickets</button>
+                    <button type="button" class="btn btn-success"><a href="#ticket">Comprar tickets</a></button>
                   </div>
                   </div>
                 </div>
@@ -187,6 +187,65 @@
             </div>
       </div>
     </section>
+    <!--Compra de tickets-->
+    <section class="compra-tickets" id="ticket">
+      <div class="container d-flex justify-content-md-center lh-lg my-5">
+        <span class="border border-primary py-4 px-3 mx-1 text-center"><strong class="fs-5">Estudiante</strong><br>Tienen un descuento<br><strong>80%</strong><br><p style="color:rgba(128, 128, 128, 0.856)">*presentar documentación</p></span>
+        <span class="border border-info py-4 px-3 mx-1 text-center"><strong class="fs-5">Trainee</strong><br>Tienen un descuento<br><strong>50%</strong><br><p style="color:rgba(128, 128, 128, 0.856)">*presentar documentación</p></span>
+        <span class="border border-warning py-4 px-3 mx-1 text-center"><strong class="fs-5">Junior</strong><br>Tienen un descuento<br><strong>15%</strong><br><p style="color:rgba(128, 128, 128, 0.856)">*presentar documentación</p></span>
+      </div>
+      <div class="venta-ticket m-auto">
+        <h6 class="text-center">VENTA</h6>
+        <h2 class="text-center">VALOR DE TICKET $200</h2>
+        <div class="row justify-content-center">
+          <form class="row gap-3">
+            <div class="col-md-4">
+              <label for="nombre" class="form-label"></label>
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="col-md-4">
+              <label for="nombre" class="form-label"></label>
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Apellido">
+            </div>
+          </form>
+        </div>
+        <div class="row justify-content-center">         
+            <div class="col-md-8">
+              <label for="correo" class="form-label"></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+            </div>         
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-4">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" id="inputZip" placeholder="Cantidad">
+          </div>
+          <div class="col-md-4">
+            <label for="categoria" class="form-label">Categoría</label>
+            <select id="categoria" class="form-select">
+              <option selected>Estudiante</option>
+              <option>Trainee</option>
+              <option>Junior</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center my-3">
+          <div class="col-md-8">
+            <div class="alert alert-primary container d-flex justify-content-md-start" role="alert" id="totalAlert">
+              Total a pagar: $
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-md-8">
+            <div class="d-flex gap-2">
+            <button class="btn btn-success flex-fill" type="reset" id="borrarBtn">Borrar</button>
+            <button class="btn btn-success flex-fill" type="button" id="resumenBtn">Resumen</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Footer-->
     <section class="footer">
       <div class="container-fluid p-4 text-white" style="background-color: rgb(26, 51, 71);">
@@ -201,6 +260,43 @@
       </div>
       </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script>
+      const categoriaSelect = document.getElementById('categoria');
+      const resumenBtn = document.getElementById('resumenBtn');
+      const borrarBtn = document.getElementById('borrarBtn');
+      const totalAlert = document.getElementById('totalAlert');
+    
+      resumenBtn.addEventListener('click', mostrarResumen);
+  
+      borrarBtn.addEventListener('click', borrarResumen);
+    
+      function mostrarResumen(event) {
+        event.preventDefault(); 
+    
+        const categoria = categoriaSelect.value;
+        const cantidad = parseInt(document.getElementById('inputZip').value);
+        let descuento = 0;
+    
+        if (categoria === 'Estudiante') {
+          descuento = 0.8; 
+        } else if (categoria === 'Trainee') {
+          descuento = 0.5; 
+        } else if (categoria === 'Junior') {
+          descuento = 0.15; 
+        }
+    
+        const total = cantidad * 200 * (1 - descuento);
+        totalAlert.textContent = 'Total a pagar: $' + total.toFixed(2);
+      }
+    
+      function borrarResumen(event) {
+        event.preventDefault(); 
+    
+        totalAlert.textContent = 'Total a pagar: $';
+      }
+    </script>
   </body>
 </html>
